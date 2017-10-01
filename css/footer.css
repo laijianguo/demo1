@@ -1,0 +1,74 @@
+/*footer.css*/
+/*底部样式*/
+/*--------------------------------------------------底部导航链接*/
+.links ul.linknav{
+	margin-top: 50px;
+	float: left;
+	height: 18px;
+	border: 1px solid #DDDDDD;
+}
+.links ul.linknav li{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border-right: 1px solid #DDDDDD;
+	padding: 0 15px;	
+	/*margin-left: -1px;*/     /*实现块元素边框线重叠的效果，，让当前块状元素把左边的元素覆盖1px*/	
+	background: #F9F9F9;
+}
+.links ul.linknav li:last-child{                           /*不显示最后一个li标签的border*/
+	border:none;
+}
+.links div {
+	float: left;
+	border: 1px solid #ddd;
+	margin-top: -1px;
+	padding: 5px;
+	width: 1170px;
+}
+.links div a{
+	display: inline-block;
+	margin: 10px;
+}
+.footer1{
+	padding: 20px 0;
+	height: 160px;
+}
+.footer1 dl{
+	height: 160px;
+	width: 19%;
+	float: left;
+}
+.footer1 dl dt{
+	font-size: 16px;
+	font-weight: bolder;
+	color: #333;
+	height: 30px;
+}
+.footer1 dl dd{
+	height: 20px;
+	line-height: 20px;
+}
+.footer1 div{
+	box-sizing: border-box;
+	border-left: 1px solid #DDDDDD;
+	height: 160px;
+	width: 24%;
+	float: left;
+	padding-left: 30px;
+}
+.icon-server{
+	background: url(../img/icon-customer-service.png) no-repeat;
+	width: 50px;
+	height: 20px;
+	display: inline-block;
+	padding-top: 50px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------底部导航链接end*/
