@@ -1,0 +1,88 @@
+/*item.css*/
+
+.item{
+	float: left;
+	border: 1px solid #DDDDDD;
+	margin-left: -1px;
+	margin-top: -1px;
+	padding: 10px 15px 0px;
+	box-sizing: border-box;
+}
+.item a{
+	text-decoration: none;				
+}
+.item a.imgbox {          /*用来装图片的a*/
+	position: relative;
+	display:block;
+}
+/*-----------------------------------------------------标签卡*/
+.item .imgbox .icon-item1{
+	position: absolute;
+	background: url(img/base.png) 0 -451px no-repeat;
+	top: -5px;
+	left: 0px;
+	width: 50px;
+	height: 43px;
+	display: inline-block;
+}
+.icon-item2{
+	position: absolute;
+	background: url(img/base.png) 0 -493px no-repeat;
+	top: -5px;
+	left: 40px;
+	width: 50px;
+	height: 43px;
+	display: inline-block;
+}
+.icon-item3{
+	position: absolute;
+	background: url(img/base.png) 0 -577px no-repeat;
+	top: -5px;
+	left: 80px;
+	width: 50px;
+	height: 43px;
+	display: inline-block;
+}
+/*-----------------------------------------------------标签卡end*/
+.item .item-info{
+	display: inline-block;
+	
+	margin-bottom: 15px;
+}
+.item-extra{
+	height: 20px;
+	margin-bottom: 11px;
+}
+.item-sale{
+	height: 30px;
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+}
+.txt-sale{
+	display: inline-block;
+	padding: 2px;
+	color: #FFFFFF;				
+	background:#F76120 ;
+}
+.star-out{                                         
+	background: url(../img/star.png);
+	background-repeat: repeat-x;
+	width: 60px;
+	height: 12px;
+	overflow: hidden;
+	display: inline-block;
+}
+.star-in{
+	background: url(../img/star-hover.png);
+	background-repeat: repeat-x;
+	width: 50%;
+	height: 12px;
+	display: inline-block;
+	overflow: hidden;
+}
+.itemlist{
+	box-sizing: border-box;
+	border-left: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	clear:both;                                /*清除浮动导致的坍塌*/
+}
