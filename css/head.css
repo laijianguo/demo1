@@ -1,0 +1,294 @@
+/*head.css*/
+/*整个项目头部的样式*/
+/*-----------------------------------------------------------------顶部导航*/
+.basic li, .user li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+.collect{
+	background: url(../img/star.png) no-repeat;
+	width: 12px;
+	height: 12px;
+	display: inline-block;                       /*在文字前的一个小图标inline-block*/
+}
+a:hover .collect{
+	background: url(../img/star-hover.png) no-repeat;      /*小图标点亮*/
+}
+
+.toggleli{       /*有下拉内容的li*/
+	position: relative;
+}
+.togglea{         /*有下拉内容的a*/
+	display: inline-block;
+	position: relative;
+	z-index: 2;                /*堆叠顺序，可以遮盖其他元素或被其他元素遮盖，只在position定位下有用*/
+	height: 30px;
+	background: #F9F9F9;
+	padding: 0 20px;
+	border-left: 1px solid transparent;           /*透明的边框线,避免on后多出变宽*/
+	border-right: 1px solid transparent;
+}
+.togglemenu{         /*下拉的内容*/
+	display: none;               /*默认隐藏*/
+	position: absolute;
+	top: 29px;
+	background: #F9F9F9;
+	white-space: nowrap;        /*表示不换行*/
+	border: 1px solid #eee;
+	padding: 3px 20px 10px 20px;
+	left: 0;	 
+	z-index: 1; 
+}
+.user .togglemenu{
+	right: 0;                      /*让下拉框向右对齐（默认向左）*/
+	left: auto;
+}
+.togglemenu img{
+	display: block;
+	margin: 0 auto;
+}
+.on .togglea{              /*改变a标签的背景颜色，边框*/
+	background: #F9F9F9;
+	box-sizing: border-box;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;	
+}
+.on .togglemenu{             /*把菜单显示出来*/
+	display: block;             /*重新显示菜单*/
+}
+.on .icon-phone{           /*改变手机图标图片*/
+	background: url(../img/sp-main.png) -334px -165px no-repeat;
+}
+.on .icon-tri{              /*改变三角形的方向*/
+    border: 4px solid transparent;
+    border-bottom-color: #ccc;
+    top: 9px;
+}
+.icon-phone{                     /*手机小图标*/
+	background: url(../img/sp-main.png) -334px -141px no-repeat;
+	width: 100px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+}
+.icon-tri{                         /*制作三角形的两种方式*/
+	/*position: absolute;
+	border-left: 3px solid transparent;
+   	border-top: 5px solid #DDDDDD;
+    border-right: 3px solid transparent;
+    margin: 12px 0 0 5px;*/
+   border: 4px solid transparent;
+   border-top-color: #ccc;
+   /*width: 0;
+   height: 0;*/
+   display: inline-block;
+   position: absolute;
+   top: 13px;
+   right: 5px; 
+}
+.vertical-line{
+	height: 12px;
+	width: 1px;
+	background: #ddd;
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: -1px;
+}
+/*-----------------------------------------------------------------顶部导航end*/
+
+/*-----------------------------------------------------------------搜索栏部分*/
+.logo{
+	height: 70px;
+}
+.logobox{                      /*大图标*/
+	width: 335px;
+	height: 55px;
+} 
+.searchbox{                   /*搜索框*/
+	width: 488;
+	height: 70;
+}
+.promise{                       /*承诺内容*/
+	width: 175;
+	height: 45;
+}
+.logoimg{
+	background: url(../img/sp-main.png) -258px -44px no-repeat;
+	width: 85px;
+	height: 55px;
+	display: block;
+	/*text-indent: -6666px;*/
+}
+.logobox h2{
+	margin: 10px 0 10px 5px;
+}
+.logobox span{
+	margin: 20px 0 5px 5px;
+	border: 1px solid #ddd;
+	padding: 3px;
+}
+.searchbox form{
+	width: 400px;
+	height: 40px;
+	border: 2px solid #2bb8aa;
+}
+.searchbox button{
+	border: none;
+	background: #2bb8aa;
+	float: right;
+	width: 80px;
+	height: 40px;
+	color: #F9F9F9;
+	cursor: pointer;
+	font-size: 14px;
+}
+.searchbox button:hover{
+	background: #00C3B0;
+}
+.searchbox input{
+	width: 259px;
+	height: 40px;
+	border: none;
+}
+.searchbox div{
+	float: left;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: 60px;
+	border-right: 1px solid #ddd;
+	
+}
+.searchbox ul{
+	margin-top: 15px;
+}
+.searchbox li{
+	float: left;
+	margin:0 13px;
+}
+.promise a{
+	float: right;
+	margin: 10px 0 0 5px;
+}
+.promise img{
+	display: block;
+	margin: 0 auto;
+}
+/*-----------------------------------------------------------------搜索栏部分end*/
+/*--------------------------------------------------------------------------------nav的展开部分*/
+.nav{
+	height: 520px;
+}
+.navbox{
+	height: 40px;
+	background: #2BB8AA;
+	line-height: 40px;
+}
+.navbox h2{
+	width: 245px;
+	height: 40px;
+	text-align:center;
+	color: #fff;
+}
+.nav-right li{
+	float: left;
+}
+.catebox{                      /*用于包含整个列表的div*/
+	position: relative;
+}
+.categroy{                              /*下拉的列表的内容*/
+	position: absolute;
+	width: 245px;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #f9f9f9;
+}
+.cateitem{                  /*全部的li*/
+	height: 52px;
+	line-height: 52px;
+	border-right: 1px solid #ddd;
+}
+.cateitem a{
+	text-decoration: none;
+}
+/*   nav li on做的 事情
+ 1、改背景颜色#fff，右上边框消失
+ 2、显示level2内容
+ 3、把array-right隐藏
+ */
+.on{
+	background: #fff;
+	border-right: 1px solid transparent;/*去掉右边框*/
+}
+.on .level2{
+	display: block;                  /*显示level2内容*/
+}
+.on .arrow-right{
+	/*display: none;*/                 /*把array-right隐藏*/
+	visibility: hidden;
+}
+.level1{
+	border-bottom: 1px solid #ddd;
+	margin-left: 20px;
+	height: 51px;
+}
+.level2{
+	background: white;
+	white-space: nowrap;
+	height: 468px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	left: 245px;
+	position: absolute;      /*他的父级定位元素是整个下拉列表的内容*/
+	top:0;
+	display: none;           /*隐藏level2内容*/
+	padding-right: 40px;
+	z-index: 3;
+}
+.level2 dl{
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 20px;
+}
+.level2 dl dt{
+	height: 52px;
+	line-height: 52px;
+	font-size: 16px;
+}
+.level2 dl dd{
+	height: 25px;
+	line-height: 25px;
+}
+.arrow-right{                                               /*level1右边小箭头*/
+	background: url(../img/arrow-right.png) no-repeat;           
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-top: 16px;
+}
+.nav-right li{
+	width: 90px;
+	text-align: center;
+	color: #fff;
+}
+.nav-right li:hover{	
+	background: #00c3b0;
+}
+/*--------------------------------------------------------------------------------nav的展开部分end*/
+/*--------------------------------------------------------------------------------nav的轮播图*/
+#container { width: 900px; height: 400px; border: 3px solid #333; overflow: hidden; position: relative;}
+        #list { width: 3700px; height: 400px; position: absolute; z-index: 1;}
+        #list img { float: left;}
+        #buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 250px;}
+        #buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+        #buttons .on {  background: orangered;}
+        .arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 180px; background-color: RGBA(0,0,0,.3); color: #fff;}
+        .arrow:hover { background-color: RGBA(0,0,0,.7);}
+        #container:hover .arrow { display: block;}
+        #prev { left: 20px;}
+        #next { right: 20px;}
+/*--------------------------------------------------------------------------------nav的轮播图end*/
