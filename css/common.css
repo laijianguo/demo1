@@ -1,0 +1,75 @@
+/*common.css*/
+.topbox{
+	width:100%;
+	height:30px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #eee;
+}
+
+/*所有大区块的样式*/
+.sec1170{              
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*-----------项目中要用的颜色*/
+.c-orange{
+	color:#f76120;    /*橘黄色*/
+}
+.c-blue{
+	color: #2bb8aa;   /*蓝色*/
+}
+.c-dgray{
+	color: #333;      /*深灰色*/
+}
+.c-gray{
+	color: #666;      /*灰色*/
+}
+.c-lgray{
+	color: #999;       /*浅灰色*/
+}
+
+/*----------------------------*/
+/*-----------项目中要用的下边距*/
+.mb10 {
+	margin-bottom:10px;
+}
+.mb25{
+	margin-bottom: 25px;
+}
+.mr10{
+	margin-right: 10px;
+}
+/*-----------项目中要用的下边距end*/
+/*-----------项目中要用的字体大小*/
+.fs-14{
+	font-size:14px;
+	
+}
+.fs-16{
+	font-size: 16;
+	font-weight: bolder;
+}
+.fs-20{
+	font-size: 20px;
+	color: #f76120;
+}
+/*-----------项目中要用的字体大小end*/
+.t-lh{
+	text-decoration: line-through;           /*横隔线*/
+}
+a{
+	color: #666;
+}
+a:hover{
+	color: #2BB8AA;
+}
+.clearfix{                    /*用于清除父级元素因子元素浮动而产生的高度为0的情况*/
+	overflow: hidden;
+}
